@@ -305,17 +305,18 @@ def draw_circles(window, points, radius, color):
       :type color: str
     """
     for k in range(len(points)):
-        center = rg.Point(points[0], points[1])
-        circle = rg.Circle(center, radius)
+        circle = rg.Circle(points[k], radius)
         circle.fill_color = color
         circle.attach_to(window)
-    window.render()
+        window.render()
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
+
+
 main()
